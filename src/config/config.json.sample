@@ -1,1 +1,4 @@
-{ "appName" : "MyApp" }
+{
+    "appName" : "MyApp",
+    'uploadDir' : "/storages/upload/"
+}

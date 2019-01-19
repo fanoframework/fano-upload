@@ -49,7 +49,6 @@ uses
     begin
         {---put your code here---}
         uploadedFile := request.getUploadedFile('imageData');
-        response.body().write('get upload');
         targetFilename := extractFileDir(getCurrentDir()) + '/storages/upload/' + uploadedFile.getClientFilename();
         uploadedFile.moveTo(targetFilename);
         response.body().write(targetFilename + ' uploaded successfully');
