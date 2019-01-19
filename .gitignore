@@ -35,6 +35,7 @@ storages/upload/*
 # is cloned.
 #----------------------------------------------
 !storages/logs/README.md
+!storages/upload/README.md
 
 #----------------------------------------------
 # Ignore compiler switches configurations
