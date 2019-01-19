@@ -9,3 +9,6 @@
 {%dependencies.inc}
 
 {---put your dependencies registration here---}
+
+container.add('uploadView', TUploadViewFactory.create());
+container.add('uploadViewParams', TNullViewParametersFactory.create());

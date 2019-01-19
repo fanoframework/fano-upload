@@ -41,6 +41,15 @@
 #----------------------------------------------
 -Fu$USER_APP_DIR$/Dependencies
 -Fu$USER_APP_DIR$/Routes
+-Fu$USER_APP_DIR$/App/Upload/Controllers
+-Fu$USER_APP_DIR$/App/Upload/Controllers/Factories
+-Fu$USER_APP_DIR$/App/Upload/Views
+-Fu$USER_APP_DIR$/App/Upload/Views/Factories
+-Fu$USER_APP_DIR$/App/Submit/Controllers
+-Fu$USER_APP_DIR$/App/Submit/Controllers/Factories
+
+
+
 #-Fu$USER_APP_DIR$/path/to/other/units
 #-Fu$USER_APP_DIR$/path/to/other/units
 

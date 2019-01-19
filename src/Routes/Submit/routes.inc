@@ -6,9 +6,4 @@
  * @license   [[LICENSE_URL]] ([[LICENSE]])
  *------------------------------------------------------------- *)
 
-{%dependencies.inc}
-
-{---put your dependencies registration here---}
-
-container.add('uploadController', TUploadControllerFactory.create());
-container.add('submitController', TSubmitControllerFactory.create());
+router.post('/submit', container.get('submitController') as IRouteHandler);

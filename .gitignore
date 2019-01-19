@@ -26,6 +26,7 @@ cgi-bin/app.cgi
 # Ignore generated log files
 #----------------------------------------------
 storages/logs/*
+storages/upload/*
 
 #----------------------------------------------
 # Do not ignore README.md
