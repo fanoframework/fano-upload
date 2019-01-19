@@ -58,6 +58,10 @@ configuration files. Following shell command is similar to command above.
 
 By default, it will output binary executable in `public` directory.
 
+### Setup upload directory permission
+
+Make sure `storages/upload` directory is writeable by web server.
+
 ### Build for different environment
 
 To build for different environment, set `BUILD_TYPE` environment variable.
