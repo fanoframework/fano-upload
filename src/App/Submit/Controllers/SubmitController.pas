@@ -44,14 +44,19 @@ uses
           const request : IRequest;
           const response : IResponse
     ) : IResponse;
-    var uploadedFile : IUploadedFile;
+    var uploadedFiles : IUploadedFileArray;
         targetFilename : string;
+        i, len : integer;
     begin
         {---put your code here---}
-        uploadedFile := request.getUploadedFile('imageData');
-        targetFilename := extractFileDir(getCurrentDir()) + '/storages/upload/' + uploadedFile.getClientFilename();
-        uploadedFile.moveTo(targetFilename);
-        response.body().write(targetFilename + ' uploaded successfully');
+        uploadedFiles := request.getUploadedFile('imageData');
+        len := length(uploadedFiles);
+        for i:=0 to len-1 do
+        begin
+            targetFilename := extractFileDir(getCurrentDir()) + '/storages/upload/' + uploadedFiles[i].getClientFilename();
+            uploadedFiles[i].moveTo(targetFilename);
+            response.body().write(targetFilename + ' uploaded successfully');
+        end;
         result := response;
     end;
 
