@@ -158,7 +158,7 @@ application in shell.
 
 or to change route to access, set `REQUEST_URI` variable.
 
-    $ REQUEST_URI=/test/test ./simulate.run.sh
+    $ REQUEST_URI=/test/test ./tools/simulate.run.sh
 
 This is similar to simulating browser requesting this page,for example,
 
@@ -170,6 +170,8 @@ unit for detecting memory leak (if you enable `-gh` switch in `build.dev.cfg`).
 ### Simulate file upload from command line
 
 `tools/simulate.file.upload.sh` is bash script that can be used to simulate file upload from shell. This is useful, for example, to detect if file upload cause memory leak by examine `heaptrc` output.
+
+    $ REQUEST_URI=/submit ./tools/simulate.file.upload.sh
 
 ## Deployment
 
