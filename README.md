@@ -165,6 +165,9 @@ This is similar to simulating browser requesting this page,for example,
 However, running using `tools/simulate.run.sh` allows you to view output of `heaptrc`
 unit for detecting memory leak (if you enable `-gh` switch in `build.dev.cfg`).
 
+## Simulate file upload from command line
+
+`tools/simulate.file.upload.sh` is bash script that can be used to simulate file upload from shell. This is useful, for example, to detect if file upload cause memory leak by examine `heaptrc` output.
 
 ## Deployment
 
