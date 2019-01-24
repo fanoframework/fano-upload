@@ -2,7 +2,7 @@
 
 Sample web application skeleton using Fano Framework, Pascal web application framework, that allows user to upload files.
 
-This project is generated using [Fano CLI](https://github.com/fanofamework/fano-cli), command-line tools to scaffolding web application using Fano Framework.
+This project is generated using [Fano CLI](https://github.com/fanoframework/fano-cli), command-line tools to scaffolding web application using Fano Framework.
 
 ## Requirement
 
