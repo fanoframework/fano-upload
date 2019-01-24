@@ -1,0 +1,173 @@
+-----------------------------8581190181815885200957036956
+Content-Disposition: form-data; name="text"
+
+test
+-----------------------------8581190181815885200957036956
+Content-Disposition: form-data; name="imageData"; filename="warcraft III registry wine.txt"
+Content-Type: text/plain
+
+#sets Graphic Mode to OpenGL:
+[Software\\Blizzard Entertainment\\Warcraft III]
+"Gfx OpenGL"=dword:00000001
+
+[HKEY_CURRENT_USER\\Software\\Blizzard Entertainment\\Warcraft III\\Video]
+"reswidth"=dword:00001024
+"resheight"=dword:0000768
+
+[HKEY_CURRENT_USER\\Software\\Blizzard Entertainment\\Warcraft III\Misc]
+"seenintromovie"=dword:00000001
+
+-----------------------------8581190181815885200957036956
+Content-Disposition: form-data; name="imageData"; filename="config.json"
+Content-Type: application/json
+
+{
+    "thirdParty": {
+        "google": {
+            "key": "",
+            "url": "https://maps.googleapis.com/maps/api/js"
+        },
+        "facebookPixel": {
+            "key": "",
+            "initFn": "fbq('init', '"
+        },
+        "facebook" : {
+            "regexPattern" : "appId\\s*:\\s*'([0-9]+)'",
+            "replacement" : "appId : 'REPLACE WITH FACEBOOK SDK API KEY, DO NOT REMOVE SINGLE QUOTE'"
+        }
+    },
+    "tasks": {
+        "path": "tasks"
+    },
+    "orbitProperty": {
+        "title": "Info diskon dan outlet terlengkap - Gotomalls.com"
+    },
+    "metaData": [
+        {
+            "name": "description",
+            "content": "Aplikasi nge-mall terbaik, temukan info diskon dan outlet terlengkap di gotomalls.com"
+        },
+        {
+            "name": "keyword",
+            "content": "mall, aplikasi, belanja, shopping, diskon, promosi, kupon, discount, coupon, promotion, informasi mall, stores, outlet, map, lokasi"
+        },
+        {
+            "name": "author",
+            "content": "DominoPOS Pte Ltd"
+        },
+        {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        },
+        {
+            "name": "format-detection",
+            "content": "telephone=no"
+        },
+        {
+            "name": "apple-mobile-web-app-capable",
+            "content": "yes"
+        },
+        {
+            "name": "mobile-web-app-capable",
+            "content": "yes"
+        },
+        {
+            "name": "theme-color",
+            "content": "#BA1F00"
+        },
+        {
+            "property": "og:url",
+            "content": "https://www.gotomalls.com"
+        },
+        {
+            "property": "og:type",
+            "content": "article"
+        },
+        {
+            "property": "og:title",
+            "content": "Buka Gotomalls.com"
+        },
+        {
+            "property": "og:description",
+            "content": "Aplikasi nge-mall terbaik, temukan info diskon dan outlet terlengkap di gotomalls.com"
+        },
+        {
+            "property": "og:image",
+            "content": "https://www.gotomalls.cool/images/static/social_media_banner.jpg"
+        },
+        {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+        },
+        {
+            "name": "twitter:site",
+            "content": "https://www.gotomalls.com"
+        },
+        {
+            "name": "twitter:title",
+            "content": "Buka Gotomalls.com"
+        },
+        {
+            "name": "twitter:description",
+            "content": "Aplikasi nge-mall terbaik, temukan info diskon dan outlet terlengkap di gotomalls.com"
+        },
+        {
+            "name": "twitter:image",
+            "content": "https://www.gotomalls.cool/images/static/social_media_banner.jpg"
+        },
+        {
+            "name": "fragment",
+            "content" : "!"
+        }
+    ],
+    "appConfig": {
+        "cookie": {
+            "domain": "gotomalls.cool",
+            "expires": 365
+        },
+        "api": "https://mall-api-v49.gotomalls.cool/",
+        "googleAnalytics": {
+            "tracker": "UA-XXXXX-X"
+        },
+
+        "thirdParty" : {
+            "facebook": {
+                "appId": "Subtitute with your own Facebook API key here",
+                "url": "//connect.facebook.net/en_US/sdk.js"
+            }
+        },
+
+        "sessionName": "X-OMS-MDM",
+        "appOriginHeaderName": "X-Orbit-App-Origin",
+        "appOriginHeaderValue": "mdm_portal",
+        "language": "id"
+   }
+}
+
+-----------------------------8581190181815885200957036956
+Content-Disposition: form-data; name="imageData"; filename="android-immersive-mode-snippet.txt"
+Content-Type: text/plain
+
+private void hideSystemUI() {
+        actionBar.hide();
+        isMenuVisible = false;
+        if (currentapiVersion >= android.os.Build.VERSION_CODES.KITKAT){
+            mDecorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_IMMERSIVE);
+        }
+        else{
+            mDecorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN);
+        }
+}
+
+-----------------------------8581190181815885200957036956--
