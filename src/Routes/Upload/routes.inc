@@ -6,4 +6,5 @@
  * @license   [[LICENSE_URL]] ([[LICENSE]])
  *------------------------------------------------------------- *)
 
+router.get('/', container.get('uploadController') as IRouteHandler);
 router.get('/upload', container.get('uploadController') as IRouteHandler);
