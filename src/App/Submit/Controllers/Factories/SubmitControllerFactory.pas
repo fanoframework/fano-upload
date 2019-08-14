@@ -39,10 +39,7 @@ uses
     begin
         routeMiddlewares := container.get('routeMiddlewares') as IMiddlewareCollectionAware;
         try
-            result := TSubmitController.create(
-                routeMiddlewares.getBefore(),
-                routeMiddlewares.getAfter()
-            );
+            result := TSubmitController.create(routeMiddlewares);
         finally
             routeMiddlewares := nil;
         end;

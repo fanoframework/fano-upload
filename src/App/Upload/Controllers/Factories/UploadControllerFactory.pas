@@ -40,8 +40,7 @@ uses
         routeMiddlewares := container.get('routeMiddlewares') as IMiddlewareCollectionAware;
         try
             result := TUploadController.create(
-                routeMiddlewares.getBefore(),
-                routeMiddlewares.getAfter(),
+                routeMiddlewares,
                 container.get('uploadView') as IView,
                 container.get('uploadViewParams') as IViewParameters
             );
