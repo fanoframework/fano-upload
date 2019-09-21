@@ -35,13 +35,7 @@ uses
     SubmitController;
 
     function TSubmitControllerFactory.build(const container : IDependencyContainer) : IDependency;
-    var routeMiddlewares : IMiddlewareCollectionAware;
     begin
-        routeMiddlewares := container.get('routeMiddlewares') as IMiddlewareCollectionAware;
-        try
-            result := TSubmitController.create(routeMiddlewares);
-        finally
-            routeMiddlewares := nil;
-        end;
+        result := TSubmitController.create();
     end;
 end.

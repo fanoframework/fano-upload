@@ -6,4 +6,4 @@
  * @license   [[LICENSE_URL]] ([[LICENSE]])
  *------------------------------------------------------------- *)
 
-router.post('/submit', container.get('submitController') as IRouteHandler);
+router.post('/submit', container.get('submitController') as IRequestHandler);

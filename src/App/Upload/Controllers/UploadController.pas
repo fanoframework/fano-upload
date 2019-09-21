@@ -23,7 +23,7 @@ type
      *
      * @author [[AUTHOR_NAME]] <[[AUTHOR_EMAIL]]>
      *------------------------------------------------*)
-    TUploadController = class(TController, IDependency)
+    TUploadController = class(TController)
     public
     end;
 

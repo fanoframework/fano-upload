@@ -35,17 +35,10 @@ uses
     UploadController;
 
     function TUploadControllerFactory.build(const container : IDependencyContainer) : IDependency;
-    var routeMiddlewares : IMiddlewareCollectionAware;
     begin
-        routeMiddlewares := container.get('routeMiddlewares') as IMiddlewareCollectionAware;
-        try
-            result := TUploadController.create(
-                routeMiddlewares,
-                container.get('uploadView') as IView,
-                container.get('uploadViewParams') as IViewParameters
-            );
-        finally
-            routeMiddlewares := nil;
-        end;
+        result := TUploadController.create(
+            container.get('uploadView') as IView,
+            container.get('uploadViewParams') as IViewParameters
+        );
     end;
 end.

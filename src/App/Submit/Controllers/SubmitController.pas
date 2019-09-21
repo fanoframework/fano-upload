@@ -26,11 +26,12 @@ type
      *
      * @author [[AUTHOR_NAME]] <[[AUTHOR_EMAIL]]>
      *------------------------------------------------*)
-    TSubmitController = class(TRouteHandler, IDependency)
+    TSubmitController = class(TAbstractController)
     public
         function handleRequest(
             const request : IRequest;
-            const response : IResponse
+            const response : IResponse;
+            const args : IRouteArgsReader
         ) : IResponse; override;
     end;
 
@@ -41,8 +42,9 @@ uses
     SysUtils;
 
     function TSubmitController.handleRequest(
-          const request : IRequest;
-          const response : IResponse
+        const request : IRequest;
+        const response : IResponse;
+        const args : IRouteArgsReader
     ) : IResponse;
     var uploadedFiles : IUploadedFileArray;
         targetFilename : string;
